@@ -66,7 +66,9 @@
     },
     "scripts": {
         "pre-update-cmd": ["DrupalComposerManaged\\ComposerScripts::preUpdate"],
-        "post-update-cmd": ["DrupalComposerManaged\\ComposerScripts::postUpdate"]
+        "post-update-cmd": ["DrupalComposerManaged\\ComposerScripts::postUpdate", "rm -rf vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../web/private/simplesamlphp/config vendor/simplesamlphp/simplesamlphp/config && rm -rf vendor/simplesamlphp/simplesamlphp/metadata && ln -sf ../../../web/private/simplesamlphp/metadata vendor/simplesamlphp/simplesamlphp/metadata"],
+        "post-install-cmd": ["rm -rf vendor/simplesamlphp/simplesamlphp/config && ln -sf ../../../web/private/simplesamlphp/config vendor/simplesamlphp/simplesamlphp/config && rm -rf vendor/simplesamlphp/simplesamlphp/metadata && ln -sf ../../../web/private/simplesamlphp/metadata vendor/simplesamlphp/simplesamlphp/metadata"
+        ]
     },
     "config": {
         "preferred-install": "dist",
@@ -83,4 +85,5 @@
             "pantheon-systems/upstream-management": true
         }
     }
+
 }
