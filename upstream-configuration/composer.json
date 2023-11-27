@@ -13,7 +13,6 @@
         "drupal/block_visibility_groups": "^2.0",
         "drupal/colorbox": "^2.0",
         "drupal/config_direct_save": "^3.0",
-        "drupal/config_update": "^2.0@alpha",
         "drupal/csv_serialization": "^4.0",
         "drupal/eva": "^3.0",
         "drupal/externalauth": "^2.0",
@@ -21,7 +20,6 @@
         "drupal/menu_trail_by_path": "^2.0",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_tools": "^6.0",
-        "drupal/nodeaccess": "^2.0@alpha",
         "drupal/pantheon_advanced_page_cache": "^2.1",
         "drupal/permissions_by_term": "^3.1",
         "drupal/sendgrid_integration": "^2.2",
@@ -99,7 +97,8 @@
         "drupal/entity": "^1.4",
         "drupal/entity_embed": "^1.5",
         "drupal/paragraphs_entity_embed": "^3.0",
-        "drupal/upgrade_status": "^4.0"
+        "drupal/upgrade_status": "^4.0",
+        "drupal/config_update": "^2.0@alpha"
     },
     "extra": {
         "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information."
