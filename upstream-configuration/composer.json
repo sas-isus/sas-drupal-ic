@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "drupal/ctools": "^4.0",
+        "drupal/ctools": "^3.14",
         "drupal/block_class": "^2.0",
         "drupal/block_visibility_groups": "^2.0",
         "drupal/colorbox": "^2.0",
@@ -28,15 +28,13 @@
         "drupal/twig_tweak": "^3.2",
         "drupal/views_field_formatter": "^4.0",
         "drupal/views_infinite_scroll": "^2.0",
-        "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.2",
         "drupal/address": "^1.12",
         "drupal/admin_toolbar": "^3.4",
-        "drupal/adminimal_admin_toolbar": "^1.11",
         "drupal/anchor_link": "^2.6",
         "drupal/bg_image_formatter": "^1.17",
         "drupal/bootstrap_layouts": "^5.3",
-        "drupal/bootstrap_paragraphs": "^2.0@beta",
+        "drupal/bootstrap_paragraphs": "^2.0.0-beta8",
         "drupal/crop": "^2.3",
         "drupal/draggableviews": "^2.1",
         "drupal/ds": "^3.15",
@@ -98,7 +96,8 @@
         "drupal/entity_embed": "^1.5",
         "drupal/paragraphs_entity_embed": "^3.0",
         "drupal/upgrade_status": "^4.0",
-        "drupal/config_update": "^2.0@alpha"
+        "drupal/config_update": "^2.0@alpha",
+        "drupal/viewsreference": "^2.0@beta"
     },
     "extra": {
         "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information."

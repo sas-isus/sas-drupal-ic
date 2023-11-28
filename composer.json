@@ -20,8 +20,7 @@
         "drupal/core-recommended": "^10",
         "pantheon-systems/drupal-integrations": "^10",
         "cweagans/composer-patches": "^1.7",
-        "drush/drush": "^11 || ^12",
-        "pantheon-systems/upstream-management": "^1"
+        "drush/drush": "^11 || ^12"
     },
     "require-dev": {
         "drupal/core-dev": "^10"
@@ -29,7 +28,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "drupal-scaffold": {
@@ -82,7 +81,8 @@
             "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true,
-            "pantheon-systems/upstream-management": true
+            "pantheon-systems/upstream-management": true,
+            "simplesamlphp/composer-module-installer": true
         }
     }
 
