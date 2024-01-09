@@ -59,7 +59,7 @@ $config = [
      * The 'application' configuration array groups a set configuration options
      * relative to an application protected by SimpleSAMLphp.
      */
-    'application' => [
+    // 'application' => [
         /*
          * The 'baseURL' configuration option allows you to specify a protocol,
          * host and optionally a port that serves as the canonical base for all
@@ -75,7 +75,7 @@ $config = [
          * to SimpleSAMLphp's API.
          */
         //'baseURL' => 'https://example.com',
-    ],
+    // ],
 
     /*
      * The following settings are *filesystem paths* which define where
@@ -90,7 +90,7 @@ $config = [
      */
     //'loggingdir' => '/var/log/',
     //'datadir' => '/var/data/',
- 	 'loggingdir'            => 'log/',
+    'loggingdir' => $logdir,
  	 'datadir'               => 'data/',
    'tempdir'               => $tempdir,
 
