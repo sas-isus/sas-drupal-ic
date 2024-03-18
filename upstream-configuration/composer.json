@@ -97,7 +97,9 @@
         "drupal/paragraphs_entity_embed": "^3.0",
         "drupal/upgrade_status": "^4.0",
         "drupal/config_update": "^2.0@alpha",
-        "drupal/viewsreference": "^2.0@beta"
+        "drupal/viewsreference": "^2.0@beta",
+        "drupal/migrate_upgrade": "^4.0",
+        "drupal/oembed_providers": "^2.1"
     },
     "extra": {
         "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information."
