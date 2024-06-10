@@ -115,7 +115,7 @@
             "npm-asset"
         ],
         "installer-paths": {
-            "docroot/libraries/{$name}": [
+            "web/libraries/{$name}": [
                 "type:bower-asset",
                 "type:npm-asset"
             ]
