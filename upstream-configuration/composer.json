@@ -7,8 +7,16 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
+            "type": "package",
+            "package": {
+                "name": "jackmoore/colorbox",
+                "version": "1.6.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jackmoore/colorbox/archive/refs/tags/1.6.4.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -107,19 +115,13 @@
         "drupal/layout_builder_component_attributes": "^2.1",
         "drupal/better_social_sharing_buttons": "^4.0",
         "oomphinc/composer-installers-extender": "^2.0",
-        "bower-asset/colorbox": "^1.6"
+        "composer/installers": "^2.2",
+        "jackmoore/colorbox": "^1.6"
     },
     "extra": {
-         "installer-types": [
-            "bower-asset",
-            "npm-asset"
-        ],
+        "installer-types": ["library"],
         "installer-paths": {
-            "web/libraries/{$name}": [
-                "type:bower-asset",
-                "type:npm-asset"
-            ]
+            "web/libraries/{$name}": ["type:drupal-library"]
         }
-
     }
 }
