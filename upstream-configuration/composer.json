@@ -110,23 +110,14 @@
         "bower-asset/colorbox": "^1.6"
     },
     "extra": {
-         "drupal-scaffold": {
-            "locations": {
-                "web-root": "public_html/"
-            }
-        },
-        "installer-types": [
-            "npm-asset",
-            "bower-asset"
+         "installer-types": [
+            "bower-asset",
+            "npm-asset"
         ],
         "installer-paths": {
-            "public_html/core": [
-                "type:drupal-core"
-            ],
-            "public_html/libraries/{$name}": [
-                "type:drupal-library",
-                "type:npm-asset",
-                "type:bower-asset"
+            "docroot/libraries/{$name}": [
+                "type:bower-asset",
+                "type:npm-asset"
             ]
         }
 
