@@ -5,10 +5,6 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
@@ -105,21 +101,9 @@
         "drupal/migrate_upgrade": "^4.0",
         "drupal/oembed_providers": "^2.1",
         "drupal/layout_builder_component_attributes": "^2.1",
-        "drupal/better_social_sharing_buttons": "^4.0",
-        "oomphinc/composer-installers-extender": "^2.0",
-        "bower-asset/colorbox": "^1.6"
+        "drupal/better_social_sharing_buttons": "^4.0"
     },
     "extra": {
-        "installer-types": [
-            "npm-asset",
-            "bower-asset"
-        ],
-        "installer-paths": {
-            "web/libraries/{$name}": [
-                "type:drupal-library",
-                "type:npm-asset",
-                "type:bower-asset"
-            ]
-        }
+        
     }
 }
