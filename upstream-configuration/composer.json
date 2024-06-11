@@ -5,6 +5,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
@@ -101,23 +105,21 @@
         "drupal/migrate_upgrade": "^4.0",
         "drupal/oembed_providers": "^2.1",
         "drupal/layout_builder_component_attributes": "^2.1",
-        "drupal/better_social_sharing_buttons": "^4.0"
+        "drupal/better_social_sharing_buttons": "^4.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "bower-asset/colorbox": "^1.6"
     },
     "extra": {
-        
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-            "Drupal\\Core\\Composer\\Composer::drupalScaffold",
-            "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
-            "if [ ! -d web/libraries/colorbox ]; then curl -L https://github.com/jackmoore/colorbox/archive/refs/tags/1.6.4.zip -o colorbox.zip && unzip colorbox.zip -d web/libraries && mv web/libraries/colorbox-1.6.4 web/libraries/colorbox && rm colorbox.zip; fi"
+        "installer-types": [
+            "npm-asset",
+            "bower-asset"
         ],
-        "post-update-cmd": [
-            "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-            "Drupal\\Core\\Composer\\Composer::drupalScaffold",
-            "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
-            "if [ ! -d web/libraries/colorbox ]; then curl -L https://github.com/jackmoore/colorbox/archive/refs/tags/1.6.4.zip -o colorbox.zip && unzip colorbox.zip -d web/libraries && mv web/libraries/colorbox-1.6.4 web/libraries/colorbox && rm colorbox.zip; fi"
-        ]
+        "installer-paths": {
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:npm-asset",
+                "type:bower-asset"
+            ]
+        }
     }
 }
