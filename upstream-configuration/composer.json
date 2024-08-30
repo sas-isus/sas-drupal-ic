@@ -101,7 +101,8 @@
         "drupal/migrate_upgrade": "^4.0",
         "drupal/oembed_providers": "^2.1",
         "drupal/layout_builder_component_attributes": "^2.1",
-        "drupal/better_social_sharing_buttons": "^4.0"
+        "drupal/better_social_sharing_buttons": "^4.0",
+        "drupal/better_exposed_filters": "^7.0"
     },
     "extra": {
         
@@ -130,6 +131,10 @@
         "symfony/finder":"6.4.8",
         "symfony/filesystem":"6.4.8",
         "symfony/event-dispatcher":"6.4.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "simplesamlphp/composer-module-installer": true
+        }
     }
-    
 }
