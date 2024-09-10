@@ -102,7 +102,8 @@
         "drupal/oembed_providers": "^2.1",
         "drupal/layout_builder_component_attributes": "^2.1",
         "drupal/better_social_sharing_buttons": "^4.0",
-        "drupal/better_exposed_filters": "^7.0"
+        "drupal/better_exposed_filters": "^7.0",
+        "drupal/insert": "^3.0"
     },
     "extra": {
         
