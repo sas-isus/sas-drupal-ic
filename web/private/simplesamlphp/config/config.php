@@ -90,9 +90,9 @@ $config = [
      */
     //'loggingdir' => '/var/log/',
     //'datadir' => '/var/data/',
-    'loggingdir' => $logdir,
- 	 'datadir'               => 'data/',
-   'tempdir'               => $tempdir,
+        'loggingdir' => $logdir,
+ 	    'datadir'    => 'data/',
+        'tempdir'    => $tempdir,
 
     /*
      * Certificate and key material can be loaded from different possible
@@ -113,7 +113,7 @@ $config = [
      * as file locations.
      */
     // 'certdir' => 'cert/',
-    'certdir' => $certdir,
+        'certdir' => $certdir,
 
     /* To load a certificate or key from the database, it should be specified
      * as 'pdo://<id>' where <id> is the identifier in the database table that
@@ -150,8 +150,8 @@ $config = [
      * The email address will be used as the recipient address for error reports, and
      * also as the technical contact in generated metadata.
      */
-    'technicalcontact_name' => 'SAS Computing ISUS',
-    'technicalcontact_email' => 'admin-staff@sas.upenn.edu',
+        'technicalcontact_name' => 'SAS Computing ISUS',
+        'technicalcontact_email' => 'admin-staff@sas.upenn.edu',
 
     /*
      * (Optional) The method by which email is delivered.  Defaults to mail which utilizes the
@@ -212,7 +212,7 @@ $config = [
      * A possible way to generate a random salt is by running the following command from a unix shell:
      * LC_ALL=C tr -c -d '0123456789abcdefghijklmnopqrstuvwxyz' </dev/urandom | dd bs=32 count=1 2>/dev/null;echo
      */
-    'secretsalt' => 'defaultsecretsalt',
+    'secretsalt' => 'rbb1v7x5157mqepprumwnv2ifljwtgfj',
 
     /*
      * This password must be kept secret, and modified from the default value 123.
