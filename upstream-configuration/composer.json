@@ -9,7 +9,7 @@
     ],
     "require": {
         "drupal/ctools": "^3.14",
-        "drupal/block_class": "^2.0",
+        "drupal/block_class": "^4.0",
         "drupal/block_visibility_groups": "^2.0",
         "drupal/colorbox": "^2.0",
         "drupal/config_direct_save": "^3.0",
@@ -104,7 +104,8 @@
         "drupal/better_social_sharing_buttons": "^4.0",
         "drupal/better_exposed_filters": "^7.0",
         "drupal/insert": "^3.0",
-        "drupal/aggregator": "^2.2"
+        "drupal/aggregator": "^2.2",
+        "drupal/protected_pages": "^1.6"
     },
     "extra": {
         
