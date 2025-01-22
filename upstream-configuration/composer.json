@@ -105,7 +105,9 @@
         "drupal/better_exposed_filters": "^7.0",
         "drupal/insert": "^3.0",
         "drupal/aggregator": "^2.2",
-        "drupal/protected_pages": "^1.6"
+        "drupal/protected_pages": "^1.6",
+        "drupal/facets": "^3.0",
+        "drupal/ckeditor5_plugin_pack": "^1.2"
     },
     "extra": {
         
