@@ -40,7 +40,10 @@
             "file-mapping": {
                 "[project-root]/.editorconfig": false,
                 "[project-root]/pantheon.upstream.yml": false,
-                "[project-root]/.gitattributes": false
+                "[project-root]/.gitattributes": false,
+                "robots.txt": {
+                    "append": "[web-root]/assets/robots-additions.txt"
+                }
             }
         },
         "installer-paths": {
