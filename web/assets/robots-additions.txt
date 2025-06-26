@@ -1,0 +1,14 @@
+# Paths - Disallow over-crawling calendar 
+Disallow: /calendar/*
+# Disallow file overcrawling
+User-agent: Googlebot
+Disallow: /*.pdf$ 
+# Disallow ai crawlers
+User-agent: OpenAI-GPT
+Disallow: /
+User-agent: *AI*
+Disallow: /
+User-agent: claudebot
+Disallow: /
+User-agent: gptbot
+Disallow: /
