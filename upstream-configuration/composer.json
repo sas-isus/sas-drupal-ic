@@ -124,5 +124,10 @@
             "php-http/discovery": true,
             "simplesamlphp/composer-xmlprovider-installer": true
         }
+    },
+    "file-mapping": {
+        "[web-root]/robots.txt": {
+            "append": "assets/robots-additions.txt"
+        }
     }
 }
