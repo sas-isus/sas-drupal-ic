@@ -1,9 +1,22 @@
-# Paths - Disallow over-crawling calendar 
-Disallow: /calendar/*
-# Disallow file overcrawling
-User-agent: Googlebot
+#prevent crawling pseudo-admin paths
+Disallow: /wp-includes/
+Disallow:  /search
+Disallow:  /system/
+Disallow:  /administrator/
+Disallow:  /wp-content/
+Disallow:  /wp-admin/
+Disallow:  /cgi-bin/
+Disallow:  /core/
+Disallow: /wp-includes/
+Disallow: /wp/
+Disallow: /pantheon_healthcheck
+Disallow: /ALF_DATA/
+#disallow file overcrawling
 Disallow: /*.pdf$ 
-# Disallow ai crawlers
+Disallow: /*.php
+Disallow: /node?*
+Disallow: /node/?*
+#disallow ai crawlers
 User-agent: OpenAI-GPT
 Disallow: /
 User-agent: *AI*
@@ -11,4 +24,10 @@ Disallow: /
 User-agent: claudebot
 Disallow: /
 User-agent: gptbot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: SemrushBot
 Disallow: /
