@@ -113,10 +113,14 @@
         "drupal/drupal8_zymphonies_theme": "^3.0"
     },
     "extra": {
-        
+        "file-mapping": {
+                "[web-root]/robots.txt": {
+                    "append": "assets/robots-additions.txt"
+                }
+            }
     },
     "conflict": {
-        
+    
     },
     "config": {
         "allow-plugins": {
