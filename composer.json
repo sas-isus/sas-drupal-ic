@@ -42,7 +42,7 @@
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false,
                 "robots.txt": {
-                    "append": "[web-root]/assets/robots-additions.txt"
+                    "append": "/web/assets/robots-additions.txt"
                 }
             }
         },
