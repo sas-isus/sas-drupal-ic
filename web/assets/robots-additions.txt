@@ -11,11 +11,40 @@ Disallow: /wp-includes/
 Disallow: /wp/
 Disallow: /pantheon_healthcheck
 Disallow: /ALF_DATA/
+# Paths - Disallow over-crawling old calendars and events
+Disallow: /node/add/
+Disallow: /events/past-events
+Disallow: /sites/www.math.upenn.edu/themes/bootstrap/
+Disallow: /?q=node/add
+Disallow: /calendar/day/2023*
+Disallow: /calendar/day/2024*
+Disallow: /calendar/day/2022*
+Disallow: /sites/default/files/*.pdf
+Disallow: /application/core/
 #disallow file overcrawling
 Disallow: /*.pdf$ 
 Disallow: /*.php
 Disallow: /node?*
 Disallow: /node/?*
+#crawl-delay if they ignore the blocks
+User-agent:  PetalBot
+Crawl-delay: 900
+User-agent: SemrushBot
+Crawl-delay: 900
+User-agent: Brightbot
+Crawl-delay: 900000
+User-agent: PingdomBot
+Crawl-delay: 900
+User-agent: MauiBot
+Crawl-delay: 900
+User-agent: DotBot
+Crawl-delay: 900
+User-agent: AhrefsBot
+Crawl-delay: 900
+User-agent: AspiegelBot
+Crawl-delay: 900
+User-agent: MJ12Bot
+Crawl-delay: 900
 #disallow ai crawlers
 User-agent: OpenAI-GPT
 Disallow: /
@@ -31,3 +60,13 @@ User-agent: Claude-Web
 Disallow: /
 User-agent: SemrushBot
 Disallow: /
+User-agent: Brightbot
+Disallow: /
+User-agent: PingdomBot
+Disallow: /
+User-agent: PetalBot
+Disallow: /
+User-agent: Barkrowler
+Disallow: /
+User-Agent: *
+DisallowAITraining: /
