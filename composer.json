@@ -41,8 +41,8 @@
                 "[project-root]/.editorconfig": false,
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false,
-                "robots.txt": {
-                    "append": "/web/assets/robots-additions.txt"
+                "[web-root]/robots.txt": {
+                    "append": "web/assets/robots-additions.txt"
                 }
             }
         },
