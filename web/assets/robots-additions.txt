@@ -22,51 +22,44 @@ Disallow: /calendar/day/2022*
 Disallow: /sites/default/files/*.pdf
 Disallow: /application/core/
 #disallow file overcrawling
-Disallow: /*.pdf$ 
+Disallow: /*.pdf$
+Disallow: /*.xml$
 Disallow: /*.php
 Disallow: /node?*
 Disallow: /node/?*
 #crawl-delay if they ignore the blocks
-User-agent:  PetalBot
-Crawl-delay: 900
-User-agent: SemrushBot
-Crawl-delay: 900
 User-agent: Brightbot
 Crawl-delay: 900000
+User-agent:  PetalBot
+User-agent: SemrushBot
 User-agent: PingdomBot
-Crawl-delay: 900
 User-agent: MauiBot
-Crawl-delay: 900
 User-agent: DotBot
-Crawl-delay: 900
 User-agent: AhrefsBot
-Crawl-delay: 900
 User-agent: AspiegelBot
-Crawl-delay: 900
 User-agent: MJ12Bot
 Crawl-delay: 900
 #disallow ai crawlers
+#User-Agent: *
+#DisallowAITraining: /
 User-agent: OpenAI-GPT
-Disallow: /
 User-agent: *AI*
-Disallow: /
 User-agent: claudebot
-Disallow: /
 User-agent: gptbot
-Disallow: /
 User-agent: ChatGPT-User
-Disallow: /
 User-agent: Claude-Web
-Disallow: /
 User-agent: SemrushBot
-Disallow: /
 User-agent: Brightbot
-Disallow: /
 User-agent: PingdomBot
-Disallow: /
 User-agent: PetalBot
-Disallow: /
 User-agent: Barkrowler
+User-Agent: Go-http-client/1.1
+User-Agent: Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
+User-Agent: YandexBot
+User-Agent: Brightbot 1.0
+User-Agent: Ping*
+User-Agent: Bright*
+User-Agent: chat*
+User-Agent: Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_161)
 Disallow: /
-User-Agent: *
-DisallowAITraining: /
