@@ -81,6 +81,7 @@
         "drupal/bootstrap": "^3.29",
         "drupal/adminimal_theme": "^1.7",
         "drupal/linkit": "^6.0",
+        "drupal/linkchecker": "^2.0",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/image_resize_filter": "^1.2",
         "drupal/superfish": "^1.7",
