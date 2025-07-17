@@ -1,5 +1,4 @@
-#prevent crawling pseudo-admin paths
-Disallow: /wp-includes/
+# Paths - Disallow over-crawling search pages
 Disallow:  /search
 Disallow:  /system/
 Disallow:  /administrator/
@@ -9,9 +8,6 @@ Disallow:  /cgi-bin/
 Disallow:  /core/
 Disallow: /wp-includes/
 Disallow: /wp/
-Disallow: /pantheon_healthcheck
-Disallow: /ALF_DATA/
-# Paths - Disallow over-crawling old calendars and events
 Disallow: /node/add/
 Disallow: /events/past-events
 Disallow: /sites/www.math.upenn.edu/themes/bootstrap/
@@ -27,6 +23,7 @@ Disallow: /*.xml$
 Disallow: /*.php
 Disallow: /node?*
 Disallow: /node/?*
+Disallow: /ALF_DATA/
 #crawl-delay if they ignore the blocks
 User-agent: Brightbot
 Crawl-delay: 900000
@@ -39,9 +36,8 @@ User-agent: AhrefsBot
 User-agent: AspiegelBot
 User-agent: MJ12Bot
 Crawl-delay: 900
-#disallow ai crawlers
 #User-Agent: *
-#DisallowAITraining: /
+#Crawl-delay: 3600
 User-agent: OpenAI-GPT
 User-agent: *AI*
 User-agent: claudebot
@@ -54,7 +50,6 @@ User-agent: PingdomBot
 User-agent: PetalBot
 User-agent: Barkrowler
 User-Agent: Go-http-client/1.1
-User-Agent: Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
 User-Agent: YandexBot
 User-Agent: Brightbot 1.0
 User-Agent: Ping*
@@ -62,4 +57,65 @@ User-Agent: Bright*
 User-Agent: chat*
 User-Agent: Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
 User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_161)
+User-Agent: 2a01:4f8:1c1a:fb04::1
+User-Agent: 2605:ad80:8f:b15a:adab:9a51:191e:b5b3
+User Agent: 2600:1000:b05f:7a5d:b4f3:6fd4:24ad:98f1
+User-Agent: python-requests/2.32.3
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G892A Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36
+User-Agent: curl/8.14.1
+User-Agent: Mozilla/5.0 zgrab/0.x
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.1703.57
+User-Agent: Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36
 Disallow: /
+User-Agent: ClaudeBot
+User-Agent: Claude-User
+User-Agent: Claude-SearchBot
+User-Agent: CCBot
+User-Agent: diffbot
+User-Agent: PerplexityBot
+User-Agent: Perplexity‑User
+User-Agent: Omgili
+User-Agent: Omgilibot
+User-Agent: webzio-extended
+User-Agent: ImagesiftBot
+User-Agent: Bytespider
+User-Agent: TikTokSpider
+User-Agent: Youbot
+User-Agent: SemrushBot-OCOB
+User-Agent: Petalbot
+User-Agent: VelenPublicWebCrawler
+User-Agent: TurnitinBot
+User-Agent: Timpibot
+User-Agent: OAI-SearchBot
+User-Agent: ICC-Crawler
+User-Agent: AI2Bot
+User-Agent: AI2Bot-Dolma
+User-Agent: DataForSeoBot
+User-Agent: AwarioBot
+User-Agent: AwarioSmartBot
+User-Agent: AwarioRssBot
+User-Agent: PanguBot
+User-Agent: Kangaroo Bot
+User-Agent: Sentibot
+User-Agent: img2dataset
+User-Agent: Meltwater
+User-Agent: Seekr
+User-Agent: peer39_crawler
+User-Agent: cohere-ai
+User-Agent: cohere-training-data-crawler
+User-Agent: DuckAssistBot
+User-Agent: Scrapy
+User-Agent: Cotoyogi
+User-Agent: aiHitBot
+User-Agent: Factset_spyderbot
+User-Agent: FirecrawlAgent
+Disallow: /
+#DisallowAITraining: /
+#User-Agent: *
+#DisallowAITraining: /
+#Content-Usage: ai=n
+#Allow: /
