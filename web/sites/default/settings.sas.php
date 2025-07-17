@@ -94,3 +94,67 @@ if (isset($RewriteMap) && (isset($_SERVER['argv'][1]) || isset($_SERVER['REQUEST
         }
     }
 }
+
+
+// block a list of bots using user agent
+$user_agents_deny_list = ['Go-http-client', 'gozilla', 'InstallShield.DigitalWizard', 'GT\:\:WWW', 'brightbot', 'Pingdom','Brightbot 1.0','Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)', 'serpstatbot', 'Go-http-client/1.1'];
+foreach ($user_agents_deny_list as $agent) {
+  if (strpos($_SERVER['HTTP_USER_AGENT'], $agent) !== FALSE) {
+    header('HTTP/1.0 403 Forbidden');
+    exit;
+  }
+}
+/* Block aggressive bots ignoring robots.txt */
+$request_ip_blocklist = [
+  '82.97.199.0/30',
+  '61.0.3163.79',
+  '64.227.159.0/30',
+  '148.72.171.0/30',
+  '52.169.201.215/30',
+  '14.215.51.70/30',
+  '14.215.51.70/30',
+  '92.62.121.70/30',
+  '82.97.199.0/30',
+  '183.162.122.116/30',
+  '36.148.178.240/30',
+  '52.42.92.117/30',
+  '167.172.83.1/30',
+  '3.82.25.219/30',
+  '188.166.178.229/30',
+  '52.4.143.42/30',
+  '180.149.13.97',
+  '206.204.57.251',
+  '76.32.215.122',
+  '185.152.65.167/30',
+  '185.246.208.0/30',
+  '152.39.197.201',
+  '152.39.168.0/30',
+  '191.177.139.6',
+  '52.167.144.0/30',
+  '154.16.169.92/30'
+
+];
+
+$request_remote_addr = $_SERVER['REMOTE_ADDR'];
+// Check if this IP is in blocklist.
+if (!$request_ip_forbidden = in_array($request_remote_addr, $request_ip_blocklist)) {
+  // Check if this IP is in CIDR block list.
+  foreach ($request_ip_blocklist as $_cidr) {
+    if (strpos($_cidr, '/') !== FALSE) {
+      $_ip = ip2long($request_remote_addr);
+      list ($_net, $_mask) = explode('/', $_cidr, 2);
+      $_ip_net = ip2long($_net);
+      $_ip_mask = ~((1 << (32 - $_mask)) - 1);
+
+      if ($request_ip_forbidden = ($_ip & $_ip_mask) == ($_ip_net & $_ip_mask)) {
+        break;
+      }
+    }
+  }
+}
+
+if ($request_ip_forbidden) {
+  header('HTTP/1.0 403 Forbidden');
+  exit;
+}
+ 
