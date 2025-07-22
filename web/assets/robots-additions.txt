@@ -37,10 +37,9 @@ User-agent: DotBot
 User-agent: AhrefsBot
 User-agent: AspiegelBot
 User-agent: MJ12Bot
-Crawl-delay: 900
-#User-Agent: *
-
 Disallow: /
+#Crawl-delay: 900
+#User-Agent: *
 
 User-Agent: Claude-User
 User-Agent: Claude-SearchBot
