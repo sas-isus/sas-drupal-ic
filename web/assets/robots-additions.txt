@@ -40,7 +40,26 @@ User-agent: MJ12Bot
 Disallow: /
 #Crawl-delay: 900
 #User-Agent: *
-
+User-agent: OpenAI-GPT
+User-agent: *AI*
+User-agent: claudebot
+User-agent: gptbot
+User-agent: ChatGPT-User
+User-agent: Claude-Web
+User-agent: SemrushBot
+User-agent: Brightbot
+User-agent: PingdomBot
+User-agent: PetalBot
+User-agent: Barkrowler
+User-Agent: Go-http-client/1.1
+User-Agent: Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
+User-Agent: YandexBot
+User-Agent: Brightbot 1.0
+User-Agent: Ping*
+User-Agent: Bright*
+User-Agent: chat*
+User-Agent: Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_161)
 User-Agent: Claude-User
 User-Agent: Claude-SearchBot
 User-Agent: CCBot
@@ -82,6 +101,7 @@ User-Agent: Cotoyogi
 User-Agent: aiHitBot
 User-Agent: Factset_spyderbot
 User-Agent: FirecrawlAgent
+User-Agent: VelenPublicWebCrawler
 Disallow: /
 #DisallowAITraining: /
 #User-Agent: *
