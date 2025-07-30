@@ -10,4 +10,4 @@ build_step: true
 protected_web_paths:
   - /private/
   - /sites/default/files/private/
-#  - /sites/default/files/config/
+  - /sites/default/files/config/
