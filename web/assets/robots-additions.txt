@@ -51,7 +51,6 @@ User-agent: Brightbot
 User-agent: PingdomBot
 User-agent: PetalBot
 User-agent: Barkrowler
-User-Agent: Go-http-client/1.1
 User-Agent: Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)
 User-Agent: YandexBot
 User-Agent: Brightbot 1.0
@@ -102,6 +101,10 @@ User-Agent: aiHitBot
 User-Agent: Factset_spyderbot
 User-Agent: FirecrawlAgent
 User-Agent: VelenPublicWebCrawler
+User-Agent: https://uol.com.br/
+User-Agent: python-requests/2.32.5
+User-Agent: Zoombot
+User-Agent: netEstate NE Crawler (+http://www.website-datenbank.de/)
 Disallow: /
 #DisallowAITraining: /
 #User-Agent: *
