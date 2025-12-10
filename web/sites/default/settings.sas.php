@@ -146,6 +146,13 @@ $request_ip_blocklist = [
   '43.134.54.97'
 ];
 
+$conf['restrict_ip_whitelist'] = array(
+        '52.42.92.117',
+        '130.91.210.230',
+        '130.91.210.231',
+        '54.188.22.153'
+);
+
 $request_remote_addr = $_SERVER['REMOTE_ADDR'];
 // Check if this IP is in blocklist.
 if (!$request_ip_forbidden = in_array($request_remote_addr, $request_ip_blocklist)) {
