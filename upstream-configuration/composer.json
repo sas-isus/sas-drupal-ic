@@ -54,7 +54,6 @@
         "drupal/menu_block": "^1.10",
         "drupal/menu_export": "^1.4",
         "drupal/metatag": "^2.0",
-        "drupal/panelizer": "^4.5",
         "drupal/panels": "^4.7",
         "drupal/paragraphs": "^1.16",
         "drupal/pathauto": "^1.12",
