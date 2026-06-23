@@ -78,6 +78,7 @@
         "drupal/xls_serialization": "^1.3",
         "simplesamlphp/simplesamlphp": "^2.3",
         "simplesamlphp/assert": "~1.8.0",
+        "simplesamlphp/composer-module-installer": "~1.4.0",
         "drupal/bootstrap": "^3.29",
         "drupal/adminimal_theme": "^1.7",
         "drupal/linkchecker": "^2.0",
@@ -114,8 +115,7 @@
         "drupal/drupal8_zymphonies_theme": "^3.0",
         "drupal/antibot": "^2.0",
         "drupal/seckit": "^2.0",
-        "drupal/flood_control": "^3.0",
-        "simplesamlphp/composer-module-installer": "^1.6"
+        "drupal/flood_control": "^3.0"
     },
     "extra": {
     },
