@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "drupal/ctools": "^3.14",
+        "drupal/ctools": "^4.1",
         "drupal/block_class": "^4.0",
         "drupal/block_visibility_groups": "^2.0",
         "drupal/colorbox": "^2.0",
@@ -31,7 +31,7 @@
         "drupal/webform": "^6.2",
         "drupal/address": "^1.12",
         "drupal/admin_toolbar": "^3.4",
-        "drupal/anchor_link": "^2.6",
+        "drupal/anchor_link": "^3.0",
         "drupal/bg_image_formatter": "^1.17",
         "drupal/bootstrap_layouts": "^5.3",
         "drupal/bootstrap_paragraphs": "^2.0.0-beta8",
@@ -43,7 +43,7 @@
         "drupal/entity_reference_revisions": "^1.10",
         "drupal/extlink": "^2.0",
         "drupal/features": "^3.13",
-        "drupal/field_group": "^3.2",
+        "drupal/field_group": "^4.0",
         "drupal/field_permissions": "^1.2",
         "drupal/google_tag": "^1.6",
         "drupal/honeypot": "^2.1",
@@ -96,14 +96,14 @@
         "drupal/focal_point": "^2.0",
         "drupal/entity": "^1.4",
         "drupal/entity_embed": "^1.5",
-        "drupal/paragraphs_entity_embed": "^3.0",
+        "drupal/paragraphs_entity_embed": "^4.0",
         "drupal/upgrade_status": "^4.0",
         "drupal/config_update": "^2.0@alpha",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/migrate_upgrade": "^4.0",
         "drupal/oembed_providers": "^2.1",
         "drupal/layout_builder_component_attributes": "^2.1",
-        "drupal/better_social_sharing_buttons": "^4.0",
+        "drupal/better_social_sharing_buttons": "^5.0",
         "drupal/better_exposed_filters": "^7.0",
         "drupal/insert": "^3.0",
         "drupal/aggregator": "^2.2",
@@ -115,7 +115,8 @@
         "drupal/drupal8_zymphonies_theme": "^3.0",
         "drupal/antibot": "^2.0",
         "drupal/seckit": "^2.0",
-        "drupal/flood_control": "^3.0"
+        "drupal/flood_control": "^3.0",
+        "drupal/smtp": "^1.4"
     },
     "extra": {
     },
